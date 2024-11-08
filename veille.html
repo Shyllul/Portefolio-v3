@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Veille Technologique : Piratage de Game Freak en octobre 2024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Piratage de Game Freak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --main-bg-color: #2c3e50;
+            --text-color: #ecf0f1;
+            --accent-color: #e74c3c;
+            --secondary-color: #34495e;
+            --light-bg-color: #f5f7fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: var(--light-bg-color);
+            color: #333;
+        }
+
+        header {
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 1.5px;
+            display: flex;
+            align-items: center;
+        }
+
+        header h1 img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        p, ul {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem; /* Espacement renforcé sous chaque paragraphe */
+            color: var(--main-bg-color);
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 2rem 0; /* Espacement autour des images */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .security-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .security-images img {
+            width: 150px;
+            height: auto;
+        }
+
+        footer {
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> <img src="documents/logo.png" alt="Logo Aleksandar Nikolic">
+            Veille Technologique</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="#projects">Projets Perso</a>
+            <a href="#e4">E4</a>
+            <a href="#e5">E5</a>
+            <a href="#old-tech">Veille technologique</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section>
+        <h2>Piratage de Gamefreak</h2>
+        <p>
+            En octobre 2024, Game Freak, célèbre pour la franchise Pokémon (notamment Pokémon noir et blanc, le meilleur jeu pokemon), a été victime d'un piratage majeur révélant des données sensibles. Cette fuite a exposé des projets en développement, des informations sur des jeux à venir, ainsi que des données personnelles des employés, touchant des milliers d'individus. Ce piratage rappelle le "Gigaleak" de Nintendo en 2018 et marque un des incidents de sécurité majeurs pour l'industrie en 2024.
+        </p>
+        
+        <!-- Image après le contexte -->
+        <div class="image-container">
+            <img src="documents/logo-gamefreak.jpg" alt="Image illustrant le contexte de l'attaque">
+        </div>
+
+        <br>
+
+        <h2>Données exposées et impact</h2>
+        <ul>
+            <li><strong>Propriété intellectuelle et informations de développement :</strong> La fuite inclut des éléments de projets Pokémon en cours, avec des prototypes et des versions bêta de créatures pour des générations futures. Cela pourrait affecter les ventes et les stratégies marketing de Game Freak.</li>
+            
+            <!-- Image après la première donnée exposée -->
+            <div class="image-container">
+                <img src="documents/pokemon-legends-z-a-294582752.png" alt="Image illustrant la propriété intellectuelle exposée">
+            </div>
+            
+            <li><strong>Données personnelles des employés :</strong> Les informations personnelles de milliers d'employés ont été compromises, exposant ces derniers à des cyberattaques ciblées. Cet incident pose des problèmes de conformité avec les réglementations de protection des données.</li>
+        </ul>
+
+        <br>
+
+        <h2>Répercussions et mesures de sécurité</h2>
+        <p>
+            À la suite de cet incident, Game Freak a renforcé sa sécurité interne en restructurant ses serveurs et en améliorant la gestion des accès. Cet événement a également incité d'autres entreprises du secteur, telles que Rockstar Games et Ubisoft, à réviser leurs mesures de cybersécurité pour mieux protéger leurs informations stratégiques.
+        </p>
+        
+        <!-- Image après les répercussions -->
+        <div class="image-container security-images">
+            <img src="documents/1200px-Rockstar_Games_Logo.svg-1203437217.png" alt="Image illustrant les répercussions et les mesures de sécurité">
+            <img src="documents/Sans titre.png" alt="Image illustrant les répercussions et les mesures de sécurité">
+        </div>            
+        
+        <br>
+
+        <h2>Points d’intérêt pour la cybersécurité et recommandations</h2>
+        <ul>
+            <li><strong>Protection de la propriété intellectuelle :</strong> Les studios de jeux vidéo gèrent des informations sensibles. Il est crucial de renforcer la sécurité autour des projets en développement pour éviter des pertes financières et de réputation.</li>
+            <li><strong>Sécurisation des données des employés :</strong> La protection des données personnelles est essentielle pour l'industrie. Game Freak pourrait envisager des politiques de sécurité Zero Trust et une surveillance accrue des accès non autorisés.</li>
+        </ul>
+
+        <br>
+
+        <h2>Conclusion</h2>
+        <p>
+            L'attaque de Game Freak en octobre 2024 souligne les risques de sécurité pour l'industrie du jeu vidéo. Ce piratage pourrait inciter d'autres studios à adopter des normes de cybersécurité plus strictes pour protéger leurs projets et les données de leurs employés.
+        </p>
+
+        <br>
+
+        <h2>Documentation Utilisées</h2>
+        <ul>
+            <li><a href="https://nintendoeverything.com/pokemon-game-freak-hack-leak-synapse-ilca/" target="_blank">Nintendo Everything</a></li>
+            <li><a href="https://nintendoeverything.com/game-freak-pokemon-hack-leak-statement/" target="_blank">Game Freak Statement</a></li>
+            <li><a href="https://gameworldobserver.com/2024/10/14/game-freak-data-leak-pokemon-games-personal-info" target="_blank">Game World Observer</a></li>
+            <li><a href="https://www.polygon.com/pokemon/469483/pokemon-leak-hack-explainer-game-freak" target="_blank">Polygon</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        2024 Aleksandar Nikolic - Veille Technologique
+    </footer>
+
+</body>
+</html>
