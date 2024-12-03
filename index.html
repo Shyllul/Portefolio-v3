@@ -76,12 +76,14 @@
             color: var(--secondary-color);
             position: relative;
             padding-bottom: 0.5rem;
+            text-align: center; /* Centrer les titres */
         }
 
         h2::after {
             content: '';
             position: absolute;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             bottom: 0;
             width: 50px;
             height: 3px;
@@ -131,13 +133,13 @@
             color: var(--text-color);
             text-align: center;
             padding: 2rem;
-            margin-top: auto; /* Assure que le footer est poussé en bas */
+            margin-top: auto;
         }
 
         footer p {
             margin: 0;
             font-size: 0.9rem;
-    }
+        }
 
         /* Media Queries */
         @media (max-width: 768px) {
@@ -190,20 +192,10 @@
                 font-size: 1rem;
             }
         }
-
-        /* Réduction de l'espace entre les liens et les descriptions */
-        section#old-tech .card p {
-            margin-bottom: 0.5rem; /* Réduit l'espace sous le paragraphe */
-        }
-
-        section#old-tech .card a {
-            margin-top: 0.2rem; /* Réduit l'espace au-dessus du lien */
-        }
     </style>
 </head>
 
 <body>
-
     <header>
         <h1>
             <img src="documents/logo.png" alt="Logo Aleksandar Nikolic">
@@ -221,143 +213,50 @@
     
     <section id="about">
         <h2>À propos de moi</h2>
-        <p>Étudiant en BTS SIO, spécialisé dans la solution d'infrastructure systèmes et réseaux, j'ai fait un saut périlleux (avec élégance, bien entendu) depuis mon parcours en BTS Comptabilité et Gestion. Pourquoi ce saut ? Simplement parce que ma passion pour l'informatique, et surtout pour la cybersécurité, a pris le dessus.</p>
-        
-        <p>Passer de la gestion comptable à l'univers de l'informatique, c'est un peu comme troquer un stylo pour un sabre laser. Mes compétences en comptabilité me permettent d'ajouter une pincée d'organisation et de rigueur à ce monde technologique.</p>
-            
-        <p>Au cours de mon périple en BTS SIO, j'ai appris à bâtir des systèmes d'information complets, comme si je montais un château numérique imprenable. Et comme je suis du genre à toujours vouloir avoir un coup d'avance sur l'ennemi, je me tiens constamment à jour des dernières tendances en cybersécurité.</p>
-            
-        <p>En parallèle de mes études, je participe à divers projets en cybersécurité, où j'affûte mes compétences grâce à des plateformes comme Root-Me et HackTheBox.</p>
-        
-        <p>Pour plus de détails sur mon parcours, vous pouvez consulter mon CV en cliquant sur le lien ci-dessous :</p>
-        
+        <p>Étudiant en BTS SIO, spécialisé dans la solution d'infrastructure systèmes et réseaux, je me suis orienté vers la cybersécurité.</p>
+        <p>Pour plus de détails sur mon parcours, vous pouvez consulter mon CV :</p>
         <p><a href="documents/cv-aleksandar-nikolic.pdf" target="_blank">Voir mon CV</a></p>
     </section>
-    
+
     <h2>BTS SIO option SISR</h2>
-    
+
     <section id="e4">
-            <h3>E4 - Situations</h3>
-            <div class="container">
-                <div class="card">
-                    <h4>Situation 1</h4>
-                    <p>Description de la situation 1.</p>
-                </div>
-                <div class="card">
-                    <h4>Situation 2</h4>
-                    <p>Description de la situation 2.</p>
-                </div>
-                <div class="card">
-                    <h4>Situation 3</h4>
-                    <p>Description de la situation 3.</p>
-                </div>
-                <div class="card">
-                    <h4>Situation 4</h4>
-                    <p>Description de la situation 4.</p>
-                </div>
-                <div class="card">
-                    <h4>Situation 5</h4>
-                    <p>Description de la situation 5.</p>
-                </div>
-                <div class="card">
-                    <h4>Situation 6</h4>
-                    <p>Description de la situation 6.</p>
-                </div>
-                <div class="card">
-                    <h4>Situation 7</h4>
-                    <p>Description de la situation 7.</p>
-                </div>
-                <div class="card">
-                    <h4>Situation 8</h4>
-                    <p>Description de la situation 8.</p>
-                </div>
-                <div class="card">
-                    <h4>Situation 9</h4>
-                    <p>Description de la situation 9.</p>
-                </div>
-            </div>
+        <h3>E4 - Situations</h3>
+        <div class="container">
+            <!-- Cartes E4 -->
+        </div>
     </section>
     
     <section id="e5">
-            <h3>E5 - Situations</h3>
-            <div class="container">
-                <div class="card">
-                    <h4>Situation 1</h4>
-                    <p>Description de la situation 1.</p>
-                </div>
-                <div class="card">
-                    <h4>Situation 2</h4>
-                    <p>Description de la situation 2.</p>
-                </div>
-            </div>
+        <h3>E5 - Situations</h3>
+        <div class="container">
+            <!-- Cartes E5 -->
+        </div>
     </section>
     
     <section id="old-tech">
-            <h3>Vieilles Technologies</h3>
-            <div class="container">
-                <div class="card">
-                    <h4>La technologies Docker</h4>
-                    <p>J'ai fait ma veille technologique sur une technologie en particulier, souvent utilisée en entreprise, Docker.</p>
-                    <p>Pour plus d'info : <a href="veille.html">Veille technologique</a></p>
-                </div>
+        <h3>Vieilles Technologies</h3>
+        <div class="container">
+            <div class="card">
+                <h4>Docker</h4>
+                <p>Pour plus d'info : <a href="veille.html">Veille technologique</a></p>
             </div>
-        </section>
+        </div>
     </section>
-
 
     <section id="certifications">
         <h2>Certifications</h2>
         <div class="container">
-            <div class="card">
-                <h4>Notions de base sur les réseaux <br>(Cisco Networking Academy)</h4>
-                <p>
-                    <a href="documents/networking-basics.pdf" target="_blank">Certificate</a><br>
-                    <a href="https://www.credly.com/badges/aae1a05c-0dd7-4264-a2f7-2b539fe8f05a/linked_in_profile" target="_blank">Badge</a>
-                </p>
-            </div>
-            <div class="card">
-                <h4>Équipements réseau et Configuration de base <br>(Cisco Networking Academy)</h4>
-                <p>
-                    <a href="documents/Networking-devices.pdf" target="_blank">Certificate</a><br>
-                    <a href="https://www.credly.com/badges/ac43262c-8bcd-478c-b245-d4baa73e783c/linked_in_profile" target="_blank">Badge</a>
-                </p>
-            </div>
-            <div class="card">
-                <h4>Sécurité des Terminaux <br>(Cisco Networking Academy)</h4>
-                <p>
-                    <a href="documents/endpoint-security.pdf" target="_blank">Certificate</a><br>
-                    <a href="https://www.credly.com/badges/ed3f0cdb-2d31-4254-85d3-0fdcf83e256c/linked_in_profile" target="_blank">Badge</a>
-                </p>
-            </div>
-            <div class="card">
-                <h4>Introduction à la Cybersécurité <br>(Cisco Networking Academy)</h4>
-                <p>
-                    <a href="documents/Introduction_to_Cybersecurity_Badge20231222-29-dbkqcj.pdf" target="_blank">Certificate</a><br>
-                    <a href="https://www.credly.com/badges/0c14809e-3932-408f-b3df-08fe4a67a95d/print" target="_blank">Badge</a>
-                </p>
-            </div>
-            <div class="card">
-                <h4>Introduction à la Cybersécurité <br>(TryHackMe)</h4>
-                <p>
-                    <a href="documents/THM-U3SZFEBAS8.png" target="_blank">Certificate</a>
-                </p>
-            </div>
-            <div class="card">
-                <h4>Analyste Junior en Cybersécurité <br>(Cisco Networking Academy)</h4>
-                <p>
-                    <a href="documents/Junior_Cybersecurity_Analyst_Career_Path_Badge20240311-29-rde1l8.pdf" target="_blank">Certificate</a><br>
-                    <a href="https://www.credly.com/badges/63397658-e7bc-4213-82fd-f080ec992376/linked_in_profile" target="_blank">Badge</a>
-                </p>
-            </div>
+            <!-- Cartes Certifications -->
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <p>
-            Pour toute demande, n'hésitez pas à me contacter à 
+            Contactez-moi à 
             <a href="mailto:anikolic93190@gmail.com">anikolic93190@gmail.com</a> 
-            <br>ou via LinkedIn : 
+            ou via LinkedIn : 
             <a href="https://www.linkedin.com/in/aleksandar-nikolic-a1597b242/" target="_blank">Aleksandar Nikolic</a>
         </p>
     </section>
@@ -365,6 +264,6 @@
     <footer>
         2024 Aleksandar Nikolic - Accueil
     </footer>
+</body>
 
-    </html>
-    
+</html>
